@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #1c1c1e; /* Dark background */
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Logo */
+.logo {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #8a2be2, #4b0082); /* Purple gradient */
+    border-radius: 20px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo-inner {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Title */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #8a2be2, #4b0082); /* Purple gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/* Logs Container */
+.logs {
+    width: 100%;
+    height: 150px;
+    background-color: #000;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 14px;
+    color: #00ff00; /* Green text for a terminal-like look */
+    text-align: left;
+}
+
+/* Individual Log Messages */
+.log {
+    margin-bottom: 5px;
+}
+
+/* Buttons */
+.button {
+    background: linear-gradient(135deg, #8a2be2, #4b0082); /* Purple gradient */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+/* Black Screen Styles */
+body.black-screen {
+    background-color: #000;
+    color: #00ff00;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.black-screen .container {
+    display: none; /* Hide the original container */
+}
+
+.black-screen .phantom-code {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    color: #00ff00;
+    text-align: left;
+    white-space: pre-wrap; /* Preserve line breaks and spaces */
+}
+
+/* Restored Screen Styles */
+.restored-screen .button {
+    background: linear-gradient(135deg, #00cc00, #008800); /* Green gradient for "Jailbroken" */
+}
